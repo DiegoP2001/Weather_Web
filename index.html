@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons.css">
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons-wind.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <div class="container">
+        <label for="houseNumber">House Number:</label>
+        <input class="boxes" id="houseNumber" type="text" placeholder="House Number">
+        <label for="streetName">Street Name:</label>
+        <input class="boxes" id="streetName" type="text" placeholder="Street Name or Number">
+        <label for="city">City:</label>
+        <input class="boxes" id="city" type="text" placeholder="City">
+        <label for="state">State:</label>
+        <input class="boxes" id="state" type="text" placeholder="State">
+        <label for="postalCode">Postal Code:</label>
+        <input class="boxes" id="postalCode" type="text" placeholder="Postal Code">
+        <label for="country">Country:</label>
+        <input class="boxes" id="country" type="text" placeholder="Country">
+        <input type="button" value="Weather Status" onclick="showWeatherTable()">
+    </div>
+    <div id="weather-status">
+        <h2 id="zone"></h2>
+        <table class="default"></table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
